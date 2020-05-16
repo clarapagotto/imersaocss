@@ -20,7 +20,7 @@ body {
   background-color: #341b42;
   background-image: url("../img/cloud-1.png"), url("../img/cloud-0.png"),
     url("../img/site-background-2.png");
-  background-size: 100vw, auto;
+  background-size: 100vw;
   background-position: bottom;
   animation: backgroundAnimation 20s linear infinite;
   font-family: "PT Mono", monospace;
