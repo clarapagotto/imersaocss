@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #3f235a;
+  background-color: #341b42;
   background-image: url("../img/cloud-1.png"), url("../img/cloud-0.png"),
     url("../img/site-background-2.png");
   background-size: 100vw, auto;
@@ -42,13 +42,6 @@ body {
   }
 }
 
-/*para telas de no mínimo 1000px*/
-@media (min-width: 1000px) {
-  body {
-    font-size: 18px;
-  }
-}
-
 header {
   height: 100vh;
   display: flex;
@@ -57,7 +50,7 @@ header {
 }
 
 .menu {
-  background-color: rgba(231, 152, 99, .2);
+  background-color: rgba(231, 152, 99, 0.2);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -86,6 +79,7 @@ a {
 
 .menu a:active,
 .menu a:hover {
+  background-color: whitesmoke;
   color: #fbc46a;
   z-index: 1;
 }
@@ -106,7 +100,7 @@ a {
 
 .sobre,
 .portfolio {
-  background-color: #3f235a;
+  background-color: #341b42;
   color: whitesmoke;
   font-size: 1.2em;
   min-height: 100vh;
@@ -135,8 +129,10 @@ a {
 }
 
 .avatar img {
+  border: 3px solid whitesmoke;
   border-radius: 50%;
-  height: 10em;
+  height: 15em;
+  padding: 15px;
 }
 
 .sobre a {
@@ -190,6 +186,7 @@ a {
 }
 
 .img-portfolio {
+  border: 3px solid whitesmoke;
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -202,19 +199,23 @@ a {
 }
 
 .contato {
-  background-color: #4f2579;
+  background-color: #231931;
   color: whitesmoke;
   font-size: 1.2em;
-  min-height: 20vh;
+  min-height: 10vh;
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
   text-align: center;
 }
 
+.contato .icons {
+  text-align: center;
+}
+
 .contato a {
   color: whitesmoke;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .contato a:active,
