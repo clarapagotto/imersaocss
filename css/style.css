@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@keyframes fundoAnimado {
+@keyframes backgroundAnimation {
   0% {
     background-position: 0 bottom, 0 bottom, bottom;
   }
@@ -23,7 +23,7 @@ body {
   background-repeat: repeat-x, repeat-x, repeat-x;
   background-size: 100vw, auto;
   background-position: bottom;
-  animation: fundoAnimado 20s linear infinite;
+  animation: backgroundAnimation 20s linear infinite;
   font-family: "PT Mono", monospace;
   height: 100vh;
   font-size: 10px;
@@ -66,7 +66,7 @@ header {
 
 .menu ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .menu li {
