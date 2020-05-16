@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fundoAnimado {
+  0% {
+    background-position: 0 bottom, 0 bottom, bottom;
+  }
+  50% {
+    background-position: 30vw bottom, 70vw bottom, bottom;
+  }
+  100% {
+    background-position: 100vw bottom, 100vw bottom, bottom;
+  }
+}
+
+body {
+  background-color: #3f235a;
+  background-image: url("../img/cloud-1.png"), url("../img/cloud-0.png"),
+    url("../img/site-background-2.png");
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-size: 100vw, auto;
+  background-position: bottom;
+  animation: fundoAnimado 20s linear infinite;
+  font-family: "PT Mono", monospace;
+  height: 100vh;
+  font-size: 10px;
+}
+
+/*para telas de no mínimo 400px*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/*para telas de no mínimo 600px*/
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*para telas de no mínimo 1000px*/
+@media (min-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+    background-color: rgba(231, 152, 99, .2);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color, color, 0.2s;
+}
+
+a {
+  color: whitesmoke;
+  font-family: "Nova Mono", monospace;
+  text-decoration: none;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: whitesmoke;
+  color: #fbc46a;
+  z-index: 1;
+}
+
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+.site-subtitle {
+  font-family: "Nova Mono", monospace;
+}
+
+.sobre,
+.portfolio {
+  background-color: #3f235a;
+  color: whitesmoke;
+  font-size: 1.2em;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  color: whitesmoke;
+  font-family: "Nova Mono", monospace;
+  padding-bottom: 1.2em;
+}
+
+.sobre p {
+  text-align: justify;
+  margin-bottom: 1.2em;
+  line-height: 1.5em;
+}
+
+.sobre .avatar {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 10em;
+}
+
+.sobre a {
+  font-family: "PT Mono", monospace;
+  text-decoration: underline;
+}
+
+.sobre a:hover {
+  color: #fbc46a;
+}
+
+.portfolio {
+  background-image: url("../img/background-portfolio.png");
+  background-size: 100vw, 100vh;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media (min-width: 1150px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(4, 240px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+
+.contato {
+  background-color: #ef5756;
+  color: whitesmoke;
+  font-size: 1.2em;
+  min-height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 3em;
+}
+
+.contato a:active,
+.contato a:hover {
+  color: #fbc46a;
+  transition: color 0.2s;
+}
