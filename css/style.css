@@ -58,7 +58,7 @@ header {
 }
 
 .menu {
-    background-color: rgba(231, 152, 99, .2);
+  background-color: rgba(231, 152, 99, .2);
   position: fixed;
   top: 0;
   width: 100vw;
